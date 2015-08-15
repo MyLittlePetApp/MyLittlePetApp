@@ -1,0 +1,4 @@
+br\com\mylittlepet\web\service\rest\UsuarioRestTest.class
+br\com\mylittlepet\web\service\rest\DonoRestTest.class
+br\com\mylittlepet\web\service\rest\PetRestTest.class
+br\com\mylittlepet\MyLittlePetAppApplicationTests.class

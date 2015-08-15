@@ -28,8 +28,7 @@ public class PetRestTest {
 		test.testCadastrarVacina();
 		
 	}
-	
-	@Test
+
 	public void testCadastrarPet() {
 		
 		final PetDTO petDTO = new PetDTO();
@@ -46,7 +45,6 @@ public class PetRestTest {
 		
 	}
 
-	@Test
 	public void testCadastrarHistorico() {
 		
 		final HistoricoDTO historicoDTO = new HistoricoDTO();
@@ -60,7 +58,6 @@ public class PetRestTest {
 		
 	}
 
-	@Test
 	public void testCadastrarConsulta() {
 		
 		final ConsultaDTO consultaDTO = new ConsultaDTO();
@@ -74,14 +71,12 @@ public class PetRestTest {
 		System.out.println(test);
 	}
 
-	@Test
 	public void testInserirFotoAlbum() {
 		
 		WebResource webResource = client.resource("http://localhost:8090/mylittlepet/pet/cadastrarFotoAlbum");
 		
 	}
 
-	@Test
 	public void testCadastrarVacina() {
 		
 		final VacinaDTO vacinaDTO = new VacinaDTO();

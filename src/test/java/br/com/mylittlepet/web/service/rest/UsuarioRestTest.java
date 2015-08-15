@@ -30,21 +30,18 @@ public class UsuarioRestTest {
 		
 	}
 	
-	@Test
 	public void testTeste() {
 		WebResource webResource = client.resource("http://localhost:8090/mylittlepet/usuario/teste");
 		final String test = webResource.get(String.class);
 		System.out.println(test);
 	}
 
-	@Test
 	public void testCadastrarUsuario(final UsuarioDTO usuarioDTO) {
 		WebResource webResource = client.resource("http://localhost:8090/mylittlepet/usuario/cadastrarUsuario");
 		final String test = webResource.type(MediaType.APPLICATION_JSON).post(String.class, usuarioDTO);
 		System.out.println(test);
 	}
 
-	@Test
 	public void testEfetuarLogin(final UsuarioDTO usuarioDTO) {
 		WebResource webResource = client.resource("http://localhost:8090/mylittlepet/usuario/efetuarLogin");
 		final String test = webResource.type(MediaType.APPLICATION_JSON).post(String.class, usuarioDTO);

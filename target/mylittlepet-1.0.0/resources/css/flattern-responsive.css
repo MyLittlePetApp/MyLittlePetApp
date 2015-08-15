@@ -1,0 +1,169 @@
+/**********************************************************************************
+
+	Project Name: Presets of Responsive Layout Style for Flattern Landing Page
+	Project Description: Flattern is a flat design landing page for your apps, product, or portfolio
+	Author: xWisnux
+	Author URI: http://www.worksofwisnu.com
+	Version: 1.0.0
+	
+**********************************************************************************/
+/* Large desktop */
+@media (min-width: 1200px) { 
+	.large-desktop-visible{
+		display: block;
+	}
+	
+	#wrapper.boxed{
+		width: 1200px;
+	}
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	#wrapper.boxed{
+		width: 768px;
+		margin: 0;
+	}
+	
+	.navbar-fixed-top, .navbar-fixed-bottom{
+		position: fixed;
+	}
+	
+	.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a{
+		color: #f8f8f0;
+	}
+	
+	.navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .nav > li > a:focus,.navbar-inverse .nav-collapse .dropdown-menu a:hover,.navbar-inverse .nav-collapse .dropdown-menu a:focus {
+	    background: none;
+	}
+	
+	.nav-tabs > li > a, .nav-pills > li > a {
+		padding-right: 12px;
+		padding-left: 12px;
+	}
+	
+	ul.pricing-content li.pricing-table-button a{
+		padding: 10px 15px;
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	h1{
+		font-size: 36px;
+	}
+	
+	h2{
+		font-size: 30px;
+	}
+	
+	h3{
+		font-size: 28px;
+	}
+	
+	h4{
+		font-size: 24px;
+	}
+	
+	h5{
+		font-size: 18px;
+	}
+	
+	h6{
+		font-size: 14px;
+	}
+	
+	.alert, .alert h4{
+		text-align: left;
+		line-height: 1.7em;
+	}
+	
+	#wrapper.boxed{
+		margin: 0;
+		width: 100%;
+	}
+	
+	section{
+		padding: 30px 20px;
+	}
+	
+	.navbar-fixed-top, .navbar-fixed-bottom{
+		position: fixed;
+	}
+	
+	.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a{
+		color: #f8f8f0;
+	}
+	
+	.navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .nav > li > a:focus,.navbar-inverse .nav-collapse .dropdown-menu a:hover,.navbar-inverse .nav-collapse .dropdown-menu a:focus {
+	    background: none;
+	}
+	
+	.flattern-nav .nav > li > a{
+		font-size: 16px;
+		margin: 0;
+	}
+	
+	.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a{
+		padding: 9px 5px;
+	}
+	
+	.button-small{
+		font-size: 10px;
+		padding: 10px 12px;
+	}
+	
+	.button{
+		font-size: 14px;
+		padding: 12px 14px;
+	}
+	
+	.button-large{
+		font-size: 18px;
+		padding: 14px 17px;
+	}
+	
+	.jumbotron{
+		font-size: 48px;
+	}
+	
+	.cta {
+		margin: 5% 0;
+	}
+	
+	.two-side-cta {
+		margin: 50px 0 70px;
+	}
+	
+	.left-side-cta{
+		float: none;
+		padding: 10px;
+	}
+	
+	.right-side-cta{
+		padding: 10px;
+		display: inline;
+		margin-left: -6px;
+	}
+	
+	select{
+		width: 101%;
+	}
+	
+}
+
+/* Portrait phones and down */
+@media (max-width: 320px) { 
+	.nav-tabs > li {
+		width: 100%;
+		display: block;
+	}
+	
+	.tabs-left > .nav-tabs > li, .tabs-right > .nav-tabs > li{
+		float: left;
+	}
+}

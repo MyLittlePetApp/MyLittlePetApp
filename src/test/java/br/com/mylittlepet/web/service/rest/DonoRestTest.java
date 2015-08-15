@@ -25,7 +25,6 @@ public class DonoRestTest {
 		donoRest.testCadastrarPerfilDono();
 	}
 	
-	@Test
 	public void testTeste() {
 		WebResource webResource = client.resource("http://localhost:8090/mylittlepet/dono/teste");
 		final String test = webResource.get(String.class);
@@ -33,7 +32,6 @@ public class DonoRestTest {
 		//fail("Not yet implemented");
 	}
 
-	@Test
 	public void testCadastrarPerfilDono() {
 		WebResource webResource = client.resource("http://localhost:8090/mylittlepet/dono/cadastrarPerfilDono");
 		
@@ -61,8 +59,7 @@ public class DonoRestTest {
 		final String test = webResource.type(MediaType.APPLICATION_JSON).post(String.class, donoDTO);
 		System.out.println(test);
 	}
-
-	@Test
+	
 	public void testMudarFotoPerfil() {
 		//fail("Not yet implemented");
 	}
